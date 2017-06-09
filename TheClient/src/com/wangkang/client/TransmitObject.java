@@ -7,16 +7,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getValue complex type.
+ * <p>Java class for transmitObject complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="getValue">
+ * &lt;complexType name="transmitObject">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="arg0" type="{http://service.wangkang.com/}person" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,22 +26,22 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getValue", propOrder = {
+@XmlType(name = "transmitObject", propOrder = {
     "arg0"
 })
-public class GetValue {
+public class TransmitObject {
 
-    protected String arg0;
+    protected Person arg0;
 
     /**
      * Gets the value of the arg0 property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Person }
      *     
      */
-    public String getArg0() {
+    public Person getArg0() {
         return arg0;
     }
 
@@ -50,10 +50,10 @@ public class GetValue {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Person }
      *     
      */
-    public void setArg0(String value) {
+    public void setArg0(Person value) {
         this.arg0 = value;
     }
 

@@ -21,6 +21,10 @@ public class Service {
 	public String getValue(String name){
 		return "my name is "+name;
 	}
+	
+	public void transmitObject(Person p){
+		System.out.println(p.getName());
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Endpoint.publish("http://localhost:9001/Service/Hello", new Service());

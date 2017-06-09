@@ -18,10 +18,13 @@ public class ServiceTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         Service service = new ServiceService().getServicePort();
-        String name = service.getValue("wangkang");
-        System.out.println(name);
+        //String name = service.getValue("wangkang");
+        Person p = new Person();
+        p.setName("haha");
+        service.transmitObject(p);
+        //System.out.println(name);
 	}
-	//set java_home=D:\wangkang\software\java
+	//set java_home=D:\wangkang\jdk1.7.0_80
 	//set classpath=%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar;
 	//set path=%JAVA_HOME%\bin;
 	//wsimport -s "D:\\wangkang\\Workspaces\\MyEclipse 10\\TheClient\\src" -p com.wangkang.client -keep //http://localhost:9001/Service/Hello?wsdl
